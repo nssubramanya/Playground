@@ -13,8 +13,17 @@ app.set('view engine', 'handlebars');
 
 // Try to take this from Configuration file later
 app.set('port', process.env.PORT || 3000);
+console.log(`Environment Setting: ${app.get('env')}`);
 
+// Midleware - must be before we define routes
 app.use(express.static(__dirname + '/public'));
+
+app.use((req, res, next) => {
+    res.locals.showTests = app.get('env') !== 'production' &&
+        req.query.test === '1';
+    next();
+});
+
 
 app.get('/', (req, res) => {
     // res.send('Hello, World\n');
@@ -23,10 +32,11 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
     // res.send('About Medialark Travel...\n');
-    var randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+
 
     res.render('about', {
-        fortune: randomFortune
+        fortune: fortunes.getFortune(),
+        pageTestScript: '/qa/tests-about.js'
     });
 });
 

@@ -4,4 +4,8 @@ const fortunes = [
     "You will have a pleasant surprise.", "Whenever possible, keep it simple.",
 ];
 
-module.exports = fortunes;
+module.exports = {
+    getFortune: function () {
+        return fortunes[Math.floor(Math.random() * fortunes.length)];
+    }
+};

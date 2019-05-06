@@ -10,9 +10,7 @@ public class JDBCTest {
 		String user = "root";
 		String pass = "root";
 
-		String jdbcUrl = "jdbc:mysql://localhost:3306/anveshi_crm";
-
-		String driver = "com.mysql.jdbc.Driver";
+		String jdbcUrl = "jdbc:mysql://localhost:3306/anveshi_crm";		
 		
 		Connection conn = null;
 

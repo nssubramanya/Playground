@@ -1,0 +1,15 @@
+{
+	"id": 1,
+	"firstName": "Subramanya",
+	"lastName": "N S",
+	"active": true,
+	"address": {
+		"street": "1006 22nd Main Road",
+		"city": "Bangalore",
+		"state": "Karnataka",
+		"zip": "560056",
+		"country": "India"
+	},
+	"languages": ["Java", "C#", "Python", "Javascript"],
+	"company": "ACME Inc."
+}

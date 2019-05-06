@@ -32,12 +32,18 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
     // res.send('About Medialark Travel...\n');
-
-
     res.render('about', {
         fortune: fortunes.getFortune(),
         pageTestScript: '/qa/tests-about.js'
     });
+});
+
+app.get('/tours/hood-river', (req, res) => {
+    res.render('tours/hood-river');
+});
+
+app.get('/tours/request-group-rate', (req, res) => {
+    res.render('tours/request-group-rate');
 });
 
 // Middlewares

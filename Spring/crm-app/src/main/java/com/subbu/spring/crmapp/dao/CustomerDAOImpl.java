@@ -2,8 +2,6 @@ package com.subbu.spring.crmapp.dao;
 
 import java.util.List;
 
-import javax.transaction.Transactional;
-
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

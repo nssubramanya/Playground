@@ -1,0 +1,28 @@
+!SESSION 2019-04-13 09:57:02.100 -----------------------------------------------
+eclipse.buildId=4.8.0.I20180611-0500
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/subramanyans/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/subramanyans/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2019-04-13 09:57:24.965
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-04-13 09:57:39.330
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-04-13 09:57:43.434
+!MESSAGE No profile found: default
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-04-13 09:57:43.456
+!MESSAGE Monitoring content of /Users/subramanyans/.aws/credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-04-13 09:57:43.877
+!MESSAGE AWS toolkit core plugin initialized after 4547 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-04-13 09:57:43.884
+!MESSAGE The current accountId is not found in the system. Switching to the default account.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2019-04-13 09:57:45.149
+!MESSAGE Initialized a new Cognito identity us-east-1:4aafdef4-b55b-4235-8a56-3d7db72c381d

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from "./App.module.css";
+import styles from "./app.module.css";
 // import Radium from 'radium';
 import Cockpit from "../components/Cockpit/Cockpit";
 import Persons from '../components/Persons/Persons';
@@ -55,7 +55,7 @@ class App extends Component {
     }
 
     return (
-      <div className={styles.center} >
+      <div className={styles.App} >
         <Cockpit
           persons={this.state.persons}
           showPersons={this.state.showPersons}
